@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,30 +14,36 @@ header{
     padding: 30px 20px;
     z-index: 10;
 }
-header.abajo{
+
+header.abajo {
     background-color: rgb(121, 149, 173);
     padding: 15px 20px;
 }
-nav{
+
+header nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header .logo{
+
+header .logo {
     position: relative;
     width: 200px;
     height: auto;
 }
-header ul{
+
+header ul {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header ul li{
+
+header ul li {
     list-style: none;
 }
-header ul li a{
+
+header ul li a {
     position: relative;
     font-family: helvetica;
     margin: 0 15px;
@@ -46,7 +53,14 @@ header ul li a{
     font-weight: 600;
     transition: 0.7s;
 }
-.Inicio{
+
+header :hover {
+    color: red;
+    transition: 0.5s;
+}
+
+/*---------------------------------Inicio-------------------------------*/
+.Inicio {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -54,8 +68,83 @@ header ul li a{
     background-size: cover;
     background-position: center center;
 }
+
+/*-------------------------------Actividades--------------------------------------------*/
 .Actividades {
     font-family: "Anta", sans-serif;
     font-weight: 500;
     font-style: normal;
-  }
+    padding: 50px;
+    text-align: center;
+}
+
+/*-------------------------------Monitores--------------------------------------------*/
+.Monitores {
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 50px;
+    text-align: center;
+}
+
+.Monitores h1 {
+    padding-bottom: 15px;
+}
+
+/*-------------------------------Blog--------------------------------------------*/
+.Blog {
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 50px;
+    text-align: center;
+}
+
+/*----------------------Contacto--------------------------------------*/
+.Contacto {
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 50px;
+    text-align: center;
+}
+
+.Contacto form {
+    width: 460px;
+    height: auto;
+    margin: 40px;
+    border-radius: 10px;
+    padding: 30px 20px 30px 30px;
+    background-color: #d12323;
+}
+
+.Contacto input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Contacto button {
+    background-color: #252926;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Anta", sans-serif;
+}
+
+.Contacto button:hover {
+    background-color: #e6f0e7;
+    color: black;
+    font-family: "Anta", sans-serif;
+}
+
+.Contacto label {
+    display: block;
+    margin-bottom: 8px;
+}

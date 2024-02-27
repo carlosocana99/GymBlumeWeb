@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    
+
     <section class="Inicio" id="Inicio">
         <header>
             <img src="img/logoblume1.png" class="logo" alt="logo">
@@ -42,7 +42,7 @@
         el cual incluye versiones de Lorem Ipsum.
     </section>
 
-    <section lass="Monitores" id="Monitores">
+    <section class="Monitores" id="Monitores">
         <h1>Monitores</h1>
         Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque fusce curabitur, nascetur aliquet habitasse
         facilisi in nisi mauris vivamus varius vulputate, fames lobortis
@@ -80,21 +80,24 @@
 
     <section class="Contacto" id="Contacto">
         <h1>Contacto</h1>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque fusce curabitur, nascetur aliquet habitasse
-        facilisi in nisi mauris vivamus varius vulputate, fames lobortis
-        eleifend vestibulum sollicitudin augue nibh feugiat egestas. Neque ad dui volutpat elementum est, nullam
-        consequat lacus phasellus, odio inceptos conubia felis. Dapibus hendrerit
-        congue proin nisi ligula sagittis condimentum aenean, dis ac curae diam integer libero parturient varius sed,
-        massa augue torquent odio consequat ultrices euismod.
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
 
-        Habitasse donec mus vel justo fames consequat tempus potenti neque fermentum sodales ornare, ad risus laoreet
-        tortor litora gravida ridiculus venenatis suspendisse vehicula.
-        Nunc primis suspendisse eros quam rhoncus urna pretium cum dui diam, dignissim semper dictum molestie nostra
-        parturient ante convallis tempor lacinia, nascetur cras lacus duis
-        erat platea fusce velit porta. Aliquet lacinia magna facilisis phasellus pellentesque malesuada pharetra
-        tristique nibh augue, imperdiet rhoncus nostra interdum venenatis
-        vivamus mus purus nunc enim lobortis, id sapien vitae habitasse egestas ligula curabitur auctor aliquam.
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Enviar Mensaje</button>
+        </form>
     </section>
+
+
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
