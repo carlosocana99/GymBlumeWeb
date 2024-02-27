@@ -162,11 +162,21 @@ textarea {
     text-decoration: none;
     color: black;
 }
-
-
+.Contacto .informacion table{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.Contacto .informacion ul{
+    list-style-type: none;
+    margin: 20px;
+}
 /*----------------------Pie de pagina-------------------------------*/
 footer{
     background-color: aquamarine;
     text-align: center;
     padding: 30px;
+}
+footer p{
+    font-family: "Anta", sans-serif;
+    font-weight: 100;
 }

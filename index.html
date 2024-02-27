@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logoGYM.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/cb27a23883.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,29 +82,38 @@
 
     <div class="Contacto" id="Contacto">
         <h1>Contacto</h1>
-        <form id="formulario">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="button" onclick="submitForm()">Enviar Mensaje</button>
+        <h2>¿Tienes alguna duda?, Contacta con nosotros:</h2>
+        <form id="formulario" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value=""><!--añadir clave para correo en el value-->
+            <input type="text" id="name" name="name" placeholder="Nombre" required>
+            <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+            <textarea id="message" name="message" rows="4" placeholder="Mensaje" required></textarea>
+            <button type="button">Enviar Mensaje</button>
         </form>
         <div class="informacion">
-            <p class="telefono"><i class="fa-solid fa-phone"></i>   952 28 29 95</p>
-            <p class="correo"><i class="fa-solid fa-envelope"></i>   gymblume@prueba.com</p>
-            <p><i class="fa-solid fa-map-location-dot"></i>  Direccion:</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.8056929693194!2d-4.437627023619261!3d36.7272275722681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7a6c876c283%3A0xff3053a408870dfe!2sBlume!5e0!3m2!1ses!2ses!4v1709037056807!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3>Horario:</h3>
+            <ul>
+                <li><strong>Lunes:</strong> 9:30 - 23:00</li>
+                <li><strong>Martes:</strong> 9:30 - 23:00</li>
+                <li><strong>Miércoles:</strong> 9:30 - 23:00</li>
+                <li><strong>Jueves:</strong> 9:30 - 23:00</li>
+                <li><strong>Viernes:</strong> 9:30 - 23:00</li>
+                <li><strong>Sabado:</strong> 10:00 - 13:00</li>
+                <li><strong>Domingo:</strong> Cerrado</li>
+            </ul>
+            <p class="telefono"><i class="fa-solid fa-phone"></i> 952 28 29 95</p>
+            <p class="correo"><i class="fa-solid fa-envelope"></i> gymblume@prueba.com</p>
+            <p><i class="fa-solid fa-map-location-dot"></i> Direccion:</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.8056929693194!2d-4.437627023619261!3d36.7272275722681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7a6c876c283%3A0xff3053a408870dfe!2sBlume!5e0!3m2!1ses!2ses!4v1709037056807!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
 
     <footer>
-        <p>@Copyright Carlos Ocaña Lopez</p>
+        <p>@ Copyright 2024 Realizado por <a href="https://carlosocana99.github.io/Portfolio/" target="_blank">Carlos Ocaña Lopez</a></p>
     </footer>
 </body>
 
