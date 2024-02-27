@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/cb27a23883.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
@@ -78,9 +79,9 @@
         vivamus mus purus nunc enim lobortis, id sapien vitae habitasse egestas ligula curabitur auctor aliquam.
     </section>
 
-    <section class="Contacto" id="Contacto">
+    <div class="Contacto" id="Contacto">
         <h1>Contacto</h1>
-        <form id="contactForm">
+        <form id="formulario">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
 
@@ -92,11 +93,17 @@
 
             <button type="button" onclick="submitForm()">Enviar Mensaje</button>
         </form>
-    </section>
+        <div class="informacion">
+            <p class="telefono"><i class="fa-solid fa-phone"></i>   952 28 29 95</p>
+            <p class="correo"><i class="fa-solid fa-envelope"></i>   gymblume@prueba.com</p>
+            <p><i class="fa-solid fa-map-location-dot"></i>  Direccion:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.8056929693194!2d-4.437627023619261!3d36.7272275722681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7a6c876c283%3A0xff3053a408870dfe!2sBlume!5e0!3m2!1ses!2ses!4v1709037056807!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 
 
     <footer>
-        
+        <p>@Copyright Carlos Ocaña Lopez</p>
     </footer>
 </body>
 

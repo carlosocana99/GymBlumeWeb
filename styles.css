@@ -69,6 +69,7 @@ header :hover {
     background-position: center center;
 }
 
+
 /*-------------------------------Actividades--------------------------------------------*/
 .Actividades {
     font-family: "Anta", sans-serif;
@@ -77,7 +78,9 @@ header :hover {
     padding: 50px;
     text-align: center;
 }
-
+.Actividades h1{
+    padding-bottom: 30px;
+}
 /*-------------------------------Monitores--------------------------------------------*/
 .Monitores {
     font-family: "Anta", sans-serif;
@@ -88,7 +91,7 @@ header :hover {
 }
 
 .Monitores h1 {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 /*-------------------------------Blog--------------------------------------------*/
@@ -99,20 +102,24 @@ header :hover {
     padding: 50px;
     text-align: center;
 }
-
+.Blog h1{
+    padding-bottom: 30px;
+}
 /*----------------------Contacto--------------------------------------*/
 .Contacto {
     font-family: "Anta", sans-serif;
     font-weight: 500;
     font-style: normal;
-    padding: 50px;
+    padding: 50px ;
     text-align: center;
 }
-
+.Contacto h1{
+    padding-bottom: 30px;
+}
 .Contacto form {
     width: 460px;
     height: auto;
-    margin: 40px;
+    margin: 40px 40px 5% 34%;
     border-radius: 10px;
     padding: 30px 20px 30px 30px;
     background-color: #d12323;
@@ -146,5 +153,20 @@ textarea {
 
 .Contacto label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+}
+.Contacto .informacion p{
+    margin-bottom: 20px;
+}
+.Contacto .informacion a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*----------------------Pie de pagina-------------------------------*/
+footer{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px;
 }
