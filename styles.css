@@ -11,13 +11,13 @@ header {
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
-    padding: 30px 70px;
+    padding: 30px 120px;
     z-index: 10;
 }
 
 header.abajo {
     background-color: rgb(121, 149, 173);
-    padding: 15px 70px;
+    padding: 15px 120px;
 }
 
 header nav {
@@ -75,11 +75,12 @@ header :hover {
     font-family: "Anta", sans-serif;
     font-weight: 500;
     font-style: normal;
-    padding: 50px ;
+    padding: 60px ;
     text-align: center;
 }
 .Instalaciones h1{
     padding-bottom: 50px;
+    font-size: 34px;
 }
 .slider{
     width: 1300px;
@@ -166,6 +167,7 @@ header :hover {
 
 .Monitores h1 {
     padding-bottom: 30px;
+    font-size: 34px;
 }
 
 /*-------------------------------Blog--------------------------------------------*/
@@ -173,11 +175,12 @@ header :hover {
     font-family: "Anta", sans-serif;
     font-weight: 500;
     font-style: normal;
-    padding: 50px;
+    padding: 100px;
     text-align: center;
 }
 .Blog h1{
     padding-bottom: 30px;
+    font-size: 34px;
 }
 
 /*----------------------Informacion--------------------------------------*/
@@ -190,6 +193,7 @@ header :hover {
 }
 .Informacion h1{
     padding-bottom: 30px;
+    font-size: 34px;
 }
 .Informacion form {
     width: 460px;
@@ -250,11 +254,12 @@ textarea {
     font-family: "Anta", sans-serif;
     font-weight: 500;
     font-style: normal;
-    padding: 50px ;
+    padding: 100px ;
     text-align: center;
 }
 .Contacto h1{
     padding-bottom: 30px;
+    font-size: 34px;
 }
 .Contacto form {
     width: 460px;
@@ -310,6 +315,20 @@ textarea {
     list-style-type: none;
     margin: 20px;
 }
+/*----------------------Comentarios-------------------------------*/
+
+.Comentarios {
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 50px;
+    text-align: center;
+}
+.Comentarios h1{
+    padding-bottom: 30px;
+    font-size: 34px;
+}
+
 /*----------------------Pie de pagina-------------------------------*/
 footer{
     background-color: aquamarine;
