@@ -8,13 +8,11 @@
     <link rel="icon" href="img/logoGYM.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/cb27a23883.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>GymBlume</title>
 </head>
 
@@ -38,11 +36,30 @@
 
     <section class="Instalaciones" id="Instalaciones">
         <h1>Instalaciones</h1>
-        <div class="carrusel-imagenes">
-            <div class="Imagen1"><img src="img/Fitness-Musculacion.jpg" alt="Imagen 1"></div>
-            <div class="Imagen2"><img src="img/gimnasio_blume2.jpg" alt="Imagen 2"></div>
-            <div class="Imagen3"><img src="img/images.jpeg" alt="Imagen 3"></div>
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="img/Fitness-Musculacion.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/gimnasio_blume2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/images.jpeg" alt="">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
+    
+        <script src="script.js"></script>
     </section>
 
     <section class="Monitores" id="Monitores">
@@ -81,7 +98,8 @@
         vivamus mus purus nunc enim lobortis, id sapien vitae habitasse egestas ligula curabitur auctor aliquam.
     </section>
 
-    <div class="Contacto" id="Contacto">
+    <div class="Informacion" id="Informacion">
+        <h1>Informacion</h1>
         <div class="informacion">
             <h3>Horario:</h3>
             <ul>
@@ -102,7 +120,9 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+    <section>
 
+    </section>
 
     <footer>
         <p>@ Copyright 2024 GYMBLUME</p>

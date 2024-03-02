@@ -70,17 +70,91 @@ header :hover {
 }
 
 
-/*-------------------------------Actividades--------------------------------------------*/
+/*-------------------------------Instalaciones--------------------------------------------*/
 .Instalaciones {
     font-family: "Anta", sans-serif;
     font-weight: 500;
     font-style: normal;
-    padding: 50px;
+    padding: 50px ;
     text-align: center;
 }
 .Instalaciones h1{
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button:hover{
+    background-color: black;
+}
+
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
 /*-------------------------------Monitores--------------------------------------------*/
 .Monitores {
     font-family: "Anta", sans-serif;
@@ -105,7 +179,73 @@ header :hover {
 .Blog h1{
     padding-bottom: 30px;
 }
-/*----------------------Contacto--------------------------------------*/
+
+/*----------------------Informacion--------------------------------------*/
+.Informacion {
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 50px ;
+    text-align: center;
+}
+.Informacion h1{
+    padding-bottom: 30px;
+}
+.Informacion form {
+    width: 460px;
+    height: auto;
+    margin: 40px 40px 5% 34%;
+    border-radius: 10px;
+    padding: 30px 20px 30px 30px;
+    background-color: #d12323;
+}
+
+.Informacion input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Informacion button {
+    background-color: #252926;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Anta", sans-serif;
+}
+
+.Informacion button:hover {
+    background-color: #e6f0e7;
+    color: black;
+    font-family: "Anta", sans-serif;
+}
+
+.Informacion label {
+    display: block;
+    margin-bottom: 10px;
+}
+.Informacion .informacion p{
+    margin-bottom: 20px;
+}
+.Informacion .informacion a{
+    text-decoration: none;
+    color: black;
+}
+.Informacion .informacion table{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.Informacion .informacion ul{
+    list-style-type: none;
+    margin: 20px;
+}
+/*-----------------------Contacto------------------------------------------*/
 .Contacto {
     font-family: "Anta", sans-serif;
     font-weight: 500;
