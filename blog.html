@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/logoGYM.ico" type="image/x-icon">
-    <script src="script.js" defer></script>
+    <script src="contacto.js" defer></script>
     <script src="https://kit.fontawesome.com/cb27a23883.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +15,22 @@
 </head>
 
 <body>
-    <section class="InicioContacto" id="InicioContacto">
+    <section class="InicioBlog" id="InicioBlog">
         <header>
             <a href="index.html">
                 <img src="img/logoblume1.png" class="logo" alt="logo">
             </a>
             <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                <ul id="menu">
+                   <!-- <li><a href="#Inicio">Inicio</a></li> -->
                     <li><a href="index.html#Instalaciones">Instalaciones</a></li>
                     <li><a href="index.html#Monitores">Monitores</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="index.html#Informacion">Informacion</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
         </header>
     </section>
